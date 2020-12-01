@@ -122,8 +122,8 @@ if __name__=='__main__':
     mds_arr = Mds(data_arr).transpose()
     isomap_arr = IsoMap(K, data_arr)
     
-    #plot_data(pca_arr, data_type, 'PCA')
-    #plot_data(mds_arr, data_type, 'MDS')
+    plot_data(pca_arr, data_type, 'PCA')
+    plot_data(mds_arr, data_type, 'MDS')
     #plot_data(sk_mds_arr, data_type, 'MDS_sklearn')
     plot_data(isomap_arr, data_type, 'Isomap K='+ str(K))
     
